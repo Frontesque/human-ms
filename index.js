@@ -5,5 +5,5 @@ const types = {
 }
 
 module.exports = (seconds=0, type="clock") => {
-    return types[type](seconds);
+    return types[type](parseInt(seconds));
 }

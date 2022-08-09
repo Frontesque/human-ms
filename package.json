@@ -1,6 +1,6 @@
 {
   "name": "human-ms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert milliseconds into human readable time",
   "main": "index.js",
   "scripts": {
