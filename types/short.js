@@ -1,5 +1,5 @@
-module.exports = (seconds = 0) => {
-    const levels = require("./_levels_")(seconds);
+module.exports = (ms = 0) => {
+    const levels = require("./_levels_")(ms);
     
     let returntext = new String();
     levels.reverse();
