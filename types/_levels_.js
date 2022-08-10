@@ -4,9 +4,8 @@ module.exports = (seconds = 0) => {
       Math.floor(seconds / 31536000) || null, //Years
       Math.floor((seconds % 31536000) / 86400) || null, //Days
       Math.floor(((seconds % 31536000) % 86400) / 3600) || null, //Hours
-      Math.floor((((seconds % 31536000) % 86400) % 3600) / 60), //Minutes
-      Math.floor((((seconds % 31536000) % 86400) % 3600) % 60), //Seconds
+      Math.floor((((seconds % 31536000) % 86400) % 3600) / 60) || null, //Minutes
+      Math.floor((((seconds % 31536000) % 86400) % 3600) % 60) || null, //Seconds
     ];
-    levels = levels.filter((level) => level !== null);
     return levels;
 }

@@ -4,6 +4,8 @@ module.exports = (ms = 0) => {
     let returntext = new String();
     levels.reverse();
     for (const i in levels) {
+      if (levels[i] == null) continue;
+
       if (i == 0) returntext = levels[i]+" Seconds "+returntext;
       if (i == 1) returntext = levels[i]+" Minutes "+returntext;
       if (i == 2) returntext = levels[i]+" Hours "+returntext;
